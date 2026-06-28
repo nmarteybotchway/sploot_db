@@ -7,6 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(sploot_db main.cpp)
 
+target_include_directories(sploot_db PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/third_party)
+
 include(GNUInstallDirs)
 install(TARGETS sploot_db
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
