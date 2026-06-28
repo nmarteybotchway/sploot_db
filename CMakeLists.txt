@@ -5,7 +5,8 @@ project(sploot_db LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(sploot_db main.cpp)
+add_executable(sploot_db main.cpp
+    util.h util.cpp)
 
 target_include_directories(sploot_db PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/third_party)
 
