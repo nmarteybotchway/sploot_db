@@ -6,7 +6,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(sploot_db main.cpp
-    util.h util.cpp)
+    util.h util.cpp
+    lru_cache.h lru_cache.cpp)
 
 target_include_directories(sploot_db PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/third_party)
 
